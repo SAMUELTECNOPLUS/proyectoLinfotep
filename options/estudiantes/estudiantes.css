@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend';
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    margin: 40px 0 0 50px;
+    width: 280px;
+    height: 800px;
+    background-color: #001F6A;
+    border-radius: 5px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    transition: 0.2s ease;
+    padding: 10px;
+
+}
+
+.profile-box:hover {
+    width: 330px;
+    height: 120px;
+}
+.box {
+    width: 100px;
+    height: 80px;
+    border-radius: 200px;
+    background-color: #FFFFFF;
+}
+
+.profile-teacher {
+    height: 80px;
+    width: 100px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.code {
+    position: absolute;
+    left: 170px;
+    top: 130px;
+    color: #FFFFFF;
+}
+
+div {
+    height: 200px;
+    width: 220px;
+    background-color: #FCA501;
+}
+
+
+.menu-box {
+    width: 300px;
+    height: 60px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    font-size: 23px;
+    gap: 10px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: width 0.3s ease; 
+}
+
+.menu-box:hover {
+    width: 350px;
+}
+
+
+.logout-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    gap: 5px;
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#a {
+    border: solid white;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+    margin-left: 50px;
+    
+    width: 1400px;
+    height: 950px;
+}
+
+.search-top {
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    width: 950px;
+    height: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #D3D3D3;
+}
+
+.search {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    width: 800px;
+    height: 65px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+.ri-search-line {
+    position: absolute;
+    top: 70px;
+    left: 630px;
+    font-size: 32px;
+  
+}
+
+
+
+.student-box {
+    margin-top: 10px;
+    height: 1200px;
+    width: 1000px;
+    background-color: #fff;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.student {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    font-size: 30px;
+    width: 900px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+#box-text {
+    background-color: #D3D3D3;
+padding: 5px;
+font-size: 16px;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: chartreuse;
+}
+
+summary.student {
+  list-style: none;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+summary.student::-webkit-details-marker {
+  display: none; 
+}
+
+details[open] .btn-more {
+  transform: rotate(90deg);
+  color: #007BFF; 
+  transition: transform 0.2s ease;
+}
+
+
+.more-information {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.more-information h1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.more-information p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Animación sutil de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
